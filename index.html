@@ -3,72 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MeoMap Online</title>
+    <title>Web Truyện</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="logo">
-            <img src="2025081015554470.png" alt="Logo">
-            <h1>MeoMap Online</h1>
-        </div>
-        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-    </header>
 
-    <!-- Menu 3 gạch -->
-    <nav id="sideMenu" class="side-menu">
-        <a href="#">Đăng ký / Đăng nhập</a>
-        <a href="#">Tìm truyện / Tác giả</a>
-        <a href="#">Thể loại truyện</a>
-        <a href="#">Lịch sử xem</a>
-        <a href="#">Trở thành tác giả/dịch giả</a>
-        <a href="#">Rút tiền</a>
-    </nav>
+<header>
+    <div class="logo">
+        <img src="images/2025081015554470.png" alt="Logo">
+    </div>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+</header>
 
-    <!-- Thanh tìm kiếm -->
-    <section class="search-bar">
-        <input type="text" placeholder="🔍 Tìm truyện, tác giả...">
+<nav id="side-menu">
+    <a href="#">Đăng ký / Đăng nhập</a>
+    <a href="#">Tìm truyện / Tác giả</a>
+    <a href="#">Thể loại truyện</a>
+    <a href="#">Lịch sử xem</a>
+    <a href="#">Trở thành tác giả/dịch giả</a>
+    <a href="#">Rút tiền</a>
+</nav>
+
+<main class="content">
+    <div class="search-bar">
+        <input type="text" placeholder="Tìm truyện...">
         <button>Tìm</button>
-    </section>
+    </div>
 
-    <!-- Truyện yêu thích -->
-    <section class="truyen-section">
-        <h2>📚 Truyện yêu thích</h2>
-        <div class="truyen-list">
-            <div class="truyen-card">
-                <img src="https://via.placeholder.com/150" alt="Bìa truyện">
-                <h3>Truyện A</h3>
+    <section>
+        <h2>Truyện yêu thích</h2>
+        <div class="story-list">
+            <div class="story-card">
+                <img src="https://via.placeholder.com/150" alt="Truyện 1">
+                <p>Truyện 1</p>
             </div>
-            <div class="truyen-card">
-                <img src="https://via.placeholder.com/150" alt="Bìa truyện">
-                <h3>Truyện B</h3>
-            </div>
-        </div>
-    </section>
-
-    <!-- Truyện mới -->
-    <section class="truyen-section">
-        <h2>🆕 Truyện mới</h2>
-        <div class="truyen-list">
-            <div class="truyen-card new">
-                <span class="tag">NEW</span>
-                <img src="https://via.placeholder.com/150" alt="Bìa truyện">
-                <h3>Truyện C</h3>
-            </div>
-            <div class="truyen-card new">
-                <span class="tag">NEW</span>
-                <img src="https://via.placeholder.com/150" alt="Bìa truyện">
-                <h3>Truyện D</h3>
+            <div class="story-card">
+                <img src="https://via.placeholder.com/150" alt="Truyện 2">
+                <p>Truyện 2</p>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2025 MeoMap Online. All rights reserved.</p>
-    </footer>
+    <section>
+        <h2>Truyện mới <span class="new-tag">NEW</span></h2>
+        <div class="story-list">
+            <div class="story-card">
+                <img src="https://via.placeholder.com/150" alt="Truyện mới 1">
+                <p>Truyện mới 1</p>
+            </div>
+            <div class="story-card">
+                <img src="https://via.placeholder.com/150" alt="Truyện mới 2">
+                <p>Truyện mới 2</p>
+            </div>
+        </div>
+    </section>
+</main>
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
