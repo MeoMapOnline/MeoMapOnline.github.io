@@ -1,64 +1,55 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Truyện</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Truyện Khoá Chương</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
 </head>
 <body>
-
 <header>
     <div class="logo">
-        <img src="images/2025081015554470.png" alt="Logo">
+        <img src="2025081015554470.png" alt="Logo">
+        <span>Truyện Khoá Chương</span>
     </div>
-    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <div class="menu-btn" onclick="toggleMenu()">☰</div>
 </header>
 
 <nav id="side-menu">
     <a href="#">Đăng ký / Đăng nhập</a>
     <a href="#">Tìm truyện / Tác giả</a>
     <a href="#">Thể loại truyện</a>
-    <a href="#">Lịch sử xem</a>
-    <a href="#">Trở thành tác giả/dịch giả</a>
+    <a href="#">Lịch sử xem truyện</a>
+    <a href="form.html">Trở thành tác giả / dịch giả</a>
     <a href="#">Rút tiền</a>
 </nav>
 
-<main class="content">
-    <div class="search-bar">
-        <input type="text" placeholder="Tìm truyện...">
-        <button>Tìm</button>
+<main>
+    <div class="search-box">
+        <input type="text" placeholder="Tìm kiếm truyện...">
+        <button>🔍</button>
     </div>
 
     <section>
-        <h2>Truyện yêu thích</h2>
+        <h2>Truyện yêu thích được đề xuất</h2>
         <div class="story-list">
-            <div class="story-card">
-                <img src="https://via.placeholder.com/150" alt="Truyện 1">
-                <p>Truyện 1</p>
-            </div>
-            <div class="story-card">
-                <img src="https://via.placeholder.com/150" alt="Truyện 2">
-                <p>Truyện 2</p>
-            </div>
+            <div><img src="https://picsum.photos/200/300?1"><p>Lãng Khách</p></div>
+            <div><img src="https://picsum.photos/200/300?2"><p>Hoa Đào Yêu</p></div>
+            <div><img src="https://picsum.photos/200/300?3"><p>Băng Sơn</p></div>
+            <div><img src="https://picsum.photos/200/300?4"><p>Pháp Sư Tối</p></div>
         </div>
     </section>
 
     <section>
-        <h2>Truyện mới <span class="new-tag">NEW</span></h2>
+        <h2>Truyện mới</h2>
         <div class="story-list">
-            <div class="story-card">
-                <img src="https://via.placeholder.com/150" alt="Truyện mới 1">
-                <p>Truyện mới 1</p>
-            </div>
-            <div class="story-card">
-                <img src="https://via.placeholder.com/150" alt="Truyện mới 2">
-                <p>Truyện mới 2</p>
-            </div>
+            <div class="new"><img src="https://picsum.photos/200/300?5"><p>Dáng Dó Nắng</p></div>
+            <div class="new"><img src="https://picsum.photos/200/300?6"><p>Ca Sĩ Chap 1</p></div>
+            <div class="new"><img src="https://picsum.photos/200/300?7"><p>Truyện mới</p></div>
+            <div class="new"><img src="https://picsum.photos/200/300?8"><p>Doanh Nhân</p></div>
         </div>
     </section>
 </main>
-
-<script src="script.js"></script>
 </body>
 </html>
